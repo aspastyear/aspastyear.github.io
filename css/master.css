@@ -6,7 +6,7 @@
   font-size: 28pt;
 }
 
-.chemistry, .physics {
+.chemistry, .physics, .maths {
   padding-left: 15px;
   border-left-style: solid;
   border-radius: 2px;
@@ -21,6 +21,9 @@
   grid-area: physics;
 }
 
+.maths {
+  grid-area: maths;
+}
 .wrapper {
   padding-left: 0px;
   padding-top: 50px;
@@ -29,7 +32,8 @@
   grid-template-areas:
     "header"
     "chemistry"
-    "physics";
+    "physics"
+    "maths";
 }
 
 @media (min-width: 500px) {
@@ -37,7 +41,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header header"
-    "chemistry physics";
+    "chemistry physics"
+    "maths physics";
   }
 }
 

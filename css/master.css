@@ -67,16 +67,19 @@ p {
 li {
   font-size: 14pt;
 }
-ul {
+ul li {
   list-style-type: none;
 }
 
-a:link, a:visited, #fake {background-color: rgba(255, 145, 12, 0.1);
+a:link, a:visited, #fake {
     background: linear-gradient(135deg, rgba(255, 145, 12, 0.3), rgba(255, 145, 12, 0.1));
-
     color: black;
     padding: 14px 20px;
     text-align: center;
     text-decoration: underline;
     display: flex;
+}
+
+a:hover, a:active {
+    background-color: rgba(255, 145, 12, 0.1);
 }
